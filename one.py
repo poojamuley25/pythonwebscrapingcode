@@ -37,7 +37,7 @@ def visualize():
   plt.ylabel('No of clg per region')
   plt.show()
 
-for code in all_codes:
+for code in range(3000,3200):
   url = f"http://dtemaharashtra.gov.in/frmInstituteSummary.aspx?InstituteCode={code}"
   page = requests.get(url)
   soup = BeautifulSoup(page.content, 'html.parser')
